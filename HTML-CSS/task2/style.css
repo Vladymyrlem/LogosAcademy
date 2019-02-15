@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    font-weight: bold;
+    font-style: normal;
+    src: url("fonts/Roboto-Bold.eot");
+    src: url("fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Bold.woff") format("woff"), url("fonts/Roboto-Bold.ttf") format("truetype");
+}
+ol>li{
+    color: blue;
+}
+ul>li{
+    color: black;
+    list-style-type: disc;
+}
+h1{
+    font-family: "Roboto-Bold";
+}
+p{
+    color: gray;
+}
+span{
+    color: red
+}

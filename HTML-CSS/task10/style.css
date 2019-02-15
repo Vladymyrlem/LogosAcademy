@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 75%;
+    height: auto!important;
+    height: 100%;
+    min-height: 100%;
+    /*background: url("img/background.png") no-repeat center;*/
+    background-image: url("img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*max-width: 1900px;*/
+    margin: 0 auto;
+    background-size: cover;
+    color: white;
+    font-family: Tahoma, sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+div.header {
+    width: 100%;
+    height: 147px;
+    margin-top: 5%;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    margin-left: 5%;
+}
+div.header .logos{
+    float: left;
+    height: 150px;
+    width: 270px;
+}
+div.logo img{
+    /*position: absolute;*/
+    width: 263px;
+    height: 37px;
+    z-index: 43;
+}
+div.logo{
+    display: inline-grid;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+}
+div.logo span {
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix(0.84656084656085, 0, 0, 0.84659635666347, 0, 0);
+    -webkit-transform: matrix(0.84656084656085, 0, 0, 0.84659635666347, 0, 0);
+    -ms-transform: matrix(0.84656084656085, 0, 0, 0.84659635666347, 0, 0);
+}
+div.logos div#tree{
+    background-image: url("img/palm-tree.png");
+    /*opacity: 0.149;*/
+    position: absolute;
+    width: 125px;
+    height: 147px;
+    z-index: 41;
+    float: right;
+    margin-left: 145px;
+    flex: 0 0 147px;
+}
+div.header .contact-us{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin-right: 8%;
+}
+div.header .contact-us ul{
+    list-style-type: none;
+display: inline-block;
+}
+div.header .contact-us ul>li:first-child{
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: left;
+    -moz-transform: matrix( 0.84656084656085,0,0,0.84659635666347,0,0);
+    -webkit-transform: matrix( 0.84656084656085,0,0,0.84659635666347,0,0);
+    -ms-transform: matrix( 0.84656084656085,0,0,0.84659635666347,0,0);
+}
+div.header .contact-us ul>li:nth-child(2){
+    font-size: 10px;
+    color: rgb(230, 230, 230);
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix(0.84656084656085, 0, 0, 0.84659635666347, 0, 0);
+    -webkit-transform: matrix(0.84656084656085, 0, 0, 0.84659635666347, 0, 0);
+    -ms-transform: matrix(0.84656084656085, 0, 0, 0.84659635666347, 0, 0);
+}
+div.header .contact-us ul>li:last-child{
+    font-size: 10px;
+    color: rgb(230, 230, 230);
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix( 0.84656084656085,0,0,0.84659635666347,0,0);
+    -webkit-transform: matrix( 0.84656084656085,0,0,0.84659635666347,0,0);
+    -ms-transform: matrix( 0.84656084656085,0,0,0.84659635666347,0,0);
+
+}
+
+/*content*/
+div.row{
+margin: 0 auto;
+    max-width: 1200px;
+    min-width: min-content;
+    display: flex;
+    /*background: blue;*/
+    padding: 5px;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    justify-content: space-evenly;
+}
+div.country{
+    /*background: orangered;*/
+    flex:1 1 calc(32% - 30px);
+    margin:15px;
+    box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
+    min-width:170px; /* мин. ширина блока, чтобы переносились на другой ряд */
+
+    padding:50px 20px;
+
+}
+
+div.row div.country div.img-group img{
+    width: 275px!important;
+    margin: 0 -7px 0 -7px;
+    position: relative;
+    border: 5px solid #808080;
+
+}
+
+
+div.footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*position: absolute;*/
+    margin-top: 10%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+@media (max-width: 1100px){
+    body {
+        width: 100%;
+
+    }
+    div.header{
+        height: 100%;
+        min-height: 165px;
+        display: block;
+    }
+    div.header .logos{
+        margin-left: 0;
+        position: relative;
+        /*margin-bottom: 12%;*/
+        flex: 0 0 147px;
+    }
+    div.header .contact-us{
+        position: absolute;
+        float: right;
+        width: auto;
+        margin-right: 14%;
+        margin-bottom: 2%;
+    }
+    div.header .contact-us ul{
+        width: max-content;
+        margin: 0 auto;
+    }
+    section.sample{
+
+    }
+    div.row{
+        float: left;
+        position: relative;
+    }
+
+}
+@media (min-width: 1300px) and (max-width: 1540px){
+    div.header{
+        height: 100%;
+        min-height: 165px;
+        display: block;
+    }
+    div.header .logos{
+        /*margin-left: 5%;*/
+        position: relative;
+        margin-bottom: 12%;
+    }
+    div.header .contact-us{
+        float: right;
+    }
+    div.row{
+        float: left;
+    }
+
+}
+@media (min-width: 1100px) and (max-width: 1366px){
+    div.header{
+        height: 100%;
+        min-height: 165px;
+        display: block;
+    }
+    div.header .logos{
+        margin-left: 0;
+        position: relative;
+        margin-bottom: 12%;
+    }
+    div.header .contact-us{
+        float: right;
+    }
+div.row{
+    float: left;
+}
+}
+@media (min-width: 1100px) and (max-width: 1300px){
+    div.header{
+        height: 100%;
+        min-height: 165px;
+    }
+    div.header .logos{
+        margin-left: 0;
+        position: relative;
+        margin-bottom: 12%;
+    }
+    div.header .contact-us{
+        float: right;
+    }
+div.flex-container{
+    flex-direction: row;
+}
+}
+
+@media (max-width: 720px){
+    div.header .contact-us{
+        /*position: a;*/
+        float: right;
+        width: auto;
+    }
+    div.flex-container{
+        flex-direction: row;
+    }
+    div.footer{
+        flex: 1;
+    }
+
+}
+@media (max-width: 440px){
+    div.header .contact-us{
+        position: absolute;
+        float: right;
+        width: auto;
+    }
+    div.flex-container{
+        flex-direction: row;
+    }
+    div.footer{
+        flex: 1;
+    }
+
+}

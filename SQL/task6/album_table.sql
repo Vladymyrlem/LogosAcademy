@@ -1,0 +1,55 @@
+create table `album` (
+	`album_id` INT,
+	`title` TEXT,
+	`photo_id` INT
+);
+insert into `album` (`album_id`, `title`, `photo_id`) values (1, 'mus etiam vel', 1);
+insert into `album` (`album_id`, `title`, `photo_id`) values (2, 'mauris sit amet eros suspendisse', 2);
+insert into `album` (`album_id`, `title`, `photo_id`) values (3, 'vehicula consequat morbi a ipsum integer a nibh', 3);
+insert into `album` (`album_id`, `title`, `photo_id`) values (4, 'posuere metus vitae ipsum aliquam non mauris morbi non', 4);
+insert into `album` (`album_id`, `title`, `photo_id`) values (5, 'tellus nisi eu orci mauris lacinia sapien quis libero', 5);
+insert into `album` (`album_id`, `title`, `photo_id`) values (6, 'posuere nonummy integer non velit donec diam neque vestibulum eget', 6);
+insert into `album` (`album_id`, `title`, `photo_id`) values (7, 'tempor convallis nulla neque libero convallis', 7);
+insert into `album` (`album_id`, `title`, `photo_id`) values (8, 'erat quisque erat eros viverra eget congue eget semper', 8);
+insert into `album` (`album_id`, `title`, `photo_id`) values (9, 'enim sit amet nunc viverra dapibus nulla suscipit', 9);
+insert into `album` (`album_id`, `title`, `photo_id`) values (10, 'sit amet consectetuer adipiscing elit', 10);
+insert into `album` (`album_id`, `title`, `photo_id`) values (11, 'primis in faucibus orci luctus', 11);
+insert into `album` (`album_id`, `title`, `photo_id`) values (12, 'interdum mauris ullamcorper purus sit amet nulla quisque arcu', 12);
+insert into `album` (`album_id`, `title`, `photo_id`) values (13, 'vel enim sit amet', 13);
+insert into `album` (`album_id`, `title`, `photo_id`) values (14, 'cubilia curae mauris viverra diam vitae quam suspendisse', 14);
+insert into `album` (`album_id`, `title`, `photo_id`) values (15, 'sapien cursus vestibulum', 15);
+insert into `album` (`album_id`, `title`, `photo_id`) values (16, 'placerat praesent blandit nam nulla integer pede justo lacinia eget', 16);
+insert into `album` (`album_id`, `title`, `photo_id`) values (17, 'in hac habitasse platea dictumst etiam faucibus cursus urna', 17);
+insert into `album` (`album_id`, `title`, `photo_id`) values (18, 'porttitor lorem id ligula suspendisse ornare consequat lectus in', 18);
+insert into `album` (`album_id`, `title`, `photo_id`) values (19, 'tincidunt nulla mollis molestie lorem quisque', 19);
+insert into `album` (`album_id`, `title`, `photo_id`) values (20, 'in est risus auctor sed', 20);
+insert into `album` (`album_id`, `title`, `photo_id`) values (21, 'vel augue vestibulum rutrum rutrum neque aenean auctor', 21);
+insert into `album` (`album_id`, `title`, `photo_id`) values (22, 'magnis dis parturient montes nascetur ridiculus mus etiam', 22);
+insert into `album` (`album_id`, `title`, `photo_id`) values (23, 'vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum', 23);
+insert into `album` (`album_id`, `title`, `photo_id`) values (24, 'ultrices posuere cubilia curae donec', 24);
+insert into `album` (`album_id`, `title`, `photo_id`) values (25, 'interdum mauris ullamcorper purus sit amet nulla', 25);
+insert into `album` (`album_id`, `title`, `photo_id`) values (26, 'enim in tempor turpis', 26);
+insert into `album` (`album_id`, `title`, `photo_id`) values (27, 'et tempus semper est quam', 27);
+insert into `album` (`album_id`, `title`, `photo_id`) values (28, 'accumsan tortor quis turpis sed ante vivamus tortor duis mattis', 28);
+insert into `album` (`album_id`, `title`, `photo_id`) values (29, 'eget rutrum at', 29);
+insert into `album` (`album_id`, `title`, `photo_id`) values (30, 'quam pharetra magna ac consequat metus sapien', 30);
+insert into `album` (`album_id`, `title`, `photo_id`) values (31, 'enim blandit mi in porttitor', 31);
+insert into `album` (`album_id`, `title`, `photo_id`) values (32, 'penatibus et magnis dis parturient montes nascetur ridiculus', 32);
+insert into `album` (`album_id`, `title`, `photo_id`) values (33, 'nunc rhoncus dui vel sem sed sagittis nam', 33);
+insert into `album` (`album_id`, `title`, `photo_id`) values (34, 'enim in tempor turpis', 34);
+insert into `album` (`album_id`, `title`, `photo_id`) values (35, 'porttitor id consequat in consequat ut', 35);
+insert into `album` (`album_id`, `title`, `photo_id`) values (36, 'tempor convallis nulla neque', 36);
+insert into `album` (`album_id`, `title`, `photo_id`) values (37, 'pede justo lacinia eget', 37);
+insert into `album` (`album_id`, `title`, `photo_id`) values (38, 'cubilia curae duis faucibus accumsan odio curabitur', 38);
+insert into `album` (`album_id`, `title`, `photo_id`) values (39, 'elementum eu interdum', 39);
+insert into `album` (`album_id`, `title`, `photo_id`) values (40, 'dictumst maecenas ut massa quis augue luctus tincidunt', 40);
+insert into `album` (`album_id`, `title`, `photo_id`) values (41, 'sit amet consectetuer adipiscing elit proin interdum mauris non ligula', 41);
+insert into `album` (`album_id`, `title`, `photo_id`) values (42, 'eleifend luctus ultricies eu nibh', 42);
+insert into `album` (`album_id`, `title`, `photo_id`) values (43, 'sit amet cursus id turpis integer aliquet massa id', 43);
+insert into `album` (`album_id`, `title`, `photo_id`) values (44, 'fusce consequat nulla nisl nunc nisl duis', 44);
+insert into `album` (`album_id`, `title`, `photo_id`) values (45, 'est phasellus sit', 45);
+insert into `album` (`album_id`, `title`, `photo_id`) values (46, 'est risus auctor sed tristique in tempus', 46);
+insert into `album` (`album_id`, `title`, `photo_id`) values (47, 'mi pede malesuada in imperdiet et commodo vulputate justo', 47);
+insert into `album` (`album_id`, `title`, `photo_id`) values (48, 'interdum mauris non ligula pellentesque ultrices', 48);
+insert into `album` (`album_id`, `title`, `photo_id`) values (49, 'laoreet ut rhoncus', 49);
+insert into `album` (`album_id`, `title`, `photo_id`) values (50, 'a libero nam dui proin leo odio porttitor', 50);

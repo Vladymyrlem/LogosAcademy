@@ -1,0 +1,140 @@
+body{
+    width: auto;
+    margin: 0;
+}
+div.menu{
+    background: blue;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 2%;
+}
+ul.menu-list{
+    list-style-type: none;
+    /*width: 100%;*/
+    display: inline-flex;
+    color: white;
+    padding: 16px;
+    margin-left: 9%;
+    margin-top: 0;
+}
+ul.menu-list>li>a{
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+ul.menu-list>li:active{
+    background: blue;
+}
+/*Task1(lists)*/
+div.title{
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+span#title{
+    font-weight: bolder;
+    font-size: 32px;
+    margin-left: 7%;
+}
+div.block-lists{
+    width: auto;
+    margin-left: 7%;
+}
+ul.my-lists{
+    font-family: "Times New Roman";
+    margin: 0;
+}
+ul.list2{
+    color: red;
+    font-size: 24px;
+}
+ul.list3{
+    color: green;
+    font-size: 24px;
+}
+ul.list4{
+    color: blue;
+    font-size: 24px;
+}
+ul.list2>li:last-child,.list3>li:last-child,.list4>li:last-child{
+    font-weight: bold;
+    font-style: italic;
+}
+/*Task2(tables)*/
+div.tables-block{
+display: block;
+}
+div.tables-block table{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table.tables tbody{
+    height: fit-content;
+    border: black 1px solid;
+}
+table.tab1, tr>td{
+    width: 33%;
+height: auto;
+}
+table.tables>tbody>tr>td{
+    border: black 1px solid;
+}
+table.tables.tab1>tbody>tr:first-child>td{
+    padding: 16px;
+}
+table.tables.tab1>tbody>tr:nth-child(2)>td{
+    padding: 16px;
+}
+
+table.tab1{
+    margin-left: 33%;
+}
+table.tab2{
+    margin-left: 23%;
+    margin-right: 15%;
+width: 53%;
+}
+table.tab1>tbody>tr>td{
+    text-align: center;
+    width: 33%;
+    padding: 10%;
+    background: white;
+
+}
+table.tab2>tbody>tr>td{
+    padding: 7px 0 7px 11px;
+    width: 25%;
+}
+
+table.tab2>tbody>tr>td:first-child, td:nth-child(2), td:nth-child(3){
+    background: yellow;
+}
+table.tab3{
+    width: 47%;
+    margin-left: 27%;
+    text-align: center;
+    font-family: "Times New Roman";
+
+}
+table.tab3>caption{
+    font-family: "Times New Roman";
+    padding: 7px;
+    font-size: 24px;
+    font-style: oblique;
+}
+table.tab3>tbody>tr>td {
+background: white;
+width: auto;
+}
+table.tab3>tbody>tr>td:first-child{
+    width: 10%;
+    padding: 3%;
+}
+table.tab3>thead>tr>th{
+    background: yellow;
+    border: black 1px solid;
+
+}

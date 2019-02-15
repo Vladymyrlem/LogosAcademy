@@ -1,0 +1,489 @@
+body {
+    width: auto;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.menu {
+    width: 98.76%;
+    margin-top: -15px;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: inline-flex;
+    background: lightgray;
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+
+nav.menu ul > li {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav.menu ul > li a {
+    display: block;
+    font-size: 18px;
+}
+
+/**
+*******Task1*****
+*/
+section.login {
+    background: url("img/bg.jpg");
+    font-family: 'Arial', sans-serif;
+    width: 900px;
+    height: 628px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -510px;
+    padding-left: 10%;
+    padding-top: 6%;
+    top: 8.3%;
+}
+
+div.block {
+    background: url("img/form-bg.png") no-repeat;
+    width: 608px;
+    height: 353px;
+    position: static;
+    padding: 9% 0 0 4%;
+    display: inline-flex;
+    margin-left: 9%;
+    margin-top: 10%;
+}
+
+div.title {
+    display: inline-table;
+    margin-bottom: 25px;
+}
+section.login div.block div.title div{
+    display: inline-flex;
+}
+div.block div.title a#log-in {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+div.block div.title a#sign-up {
+    color: #00009f;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+div.title-content {
+    display: block;
+    text-align: justify;
+}
+div.title-content div{
+    display: flex;
+    text-align: justify;
+    margin-bottom: -12px;
+}
+div.title-content p {
+    color: #b9b9b9;
+    font-size: small;
+width: max-content;
+    margin-top: -3px;
+}
+
+div.title-content div a{
+    font-size: 13px;
+    color: #2944ab;
+    font-weight: bolder;
+    margin-top: -5px;
+}
+
+div.title-content a:last-child {
+    font-size: 13px;
+    color: #2944ab;
+    font-weight: bolder;
+}
+
+hr {
+    position: absolute !important;
+    width: 550px;
+}
+
+div.log-in-block {
+    display: inline-flex;
+    position: absolute;
+    margin-top: 55px;
+    width: inherit;
+    height: 194px;
+}
+
+div.log-in-block form.login-with-form {
+    width: 40%;
+    display: inline-grid;
+    margin-right: 2%;
+}
+
+div.log-in-block form.login-form {
+    width: 40%;
+    display: grid;
+    margin-left: 4%;
+}
+
+form.login-with-form button.fb-but {
+    background-image: linear-gradient(to right, #668dc8, #4870ab);
+    border-radius: 7px;
+    vertical-align: center;
+    border: 0;
+    height: 33px;
+    color: white;
+    width: 93%;
+    margin-left: 6%;
+    font-weight: bold;
+}
+
+.fb-but:before {
+    content: url("img/fb-icon.png");
+    margin-right: 15px;
+    padding-right: 11px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    vertical-align: middle;
+    margin-left: -28px;
+}
+
+form.login-with-form button.tw-but {
+    background: linear-gradient(#53d0d5, #36b3b8);
+    border-radius: 7px;
+    vertical-align: center;
+    border: 0;
+    height: 33px;
+    width: 93%;
+    margin-left: 6%;
+    color: white;
+    margin-top: -9px;
+    font-weight: bold;
+}
+
+form.login-with-form button.tw-but:hover, button.fb-but:hover {
+    box-shadow: 1px 1px white, 3px 3px white;
+    cursor: pointer;
+}
+
+.tw-but:before {
+    content: url("img/twitter-icon.png");
+    margin-right: 11px;
+    padding-right: 11px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    vertical-align: middle;
+    margin-left: -45px;
+}
+
+div.lines-block {
+    display: grid;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+div.lines-block span#line1 {
+    border-right: lightgray 1px solid;
+    height: 63px;
+    width: 10px;
+    margin-top: 13px
+}
+
+div.lines-block span#line2 {
+    border-right: lightgray 1px solid;
+    height: 59px;
+    width: 10px
+}
+
+form.login-form input {
+    background: #ebebeb;
+    height: 32px;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 5px;
+}
+
+form.login-form input:active {
+    background: #ebebeb;
+}
+
+form.login-form input[type=text] {
+    background: url("img/user-icon.png") no-repeat left;
+    background-position-x: 97%;
+
+    vertical-align: middle; /* Выравнивание по середине */
+    padding-left: 14px;
+
+}
+
+form.login-form input[type=password] {
+    background: url("img/password-icon.png") no-repeat left;
+    background-position-x: 97%;
+
+    vertical-align: middle; /* Выравнивание по середине */
+    padding-left: 14px;
+}
+
+form.login-form input[type=submit] {
+    background: linear-gradient(to right, #fad965, #d1b03d);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1px 23px 0 28px;
+    float: right;
+    margin-left: 150px;
+    cursor: pointer;
+
+}
+
+form.login-form a {
+    margin-left: 140px;
+    color: #b9b9b9;
+    font-family: 'Arial', sans-serif;
+    font-size: small;
+}
+
+/**
+*******Task2*****
+*/
+div.title1 {
+    font-family: 'AkzidenzGrotesk Black', sans-serif;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #00264d;
+    font-weight: bolder;
+    text-shadow: 1px 1px white, 3px 3px white;
+    margin-bottom: 55px;
+
+}
+
+div.first-block {
+    top: 50%;
+    left: 50%;
+    background: url("img/bg1.jpg"), no-repeat top;
+    width: 800px;
+    height: 520px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 3%;
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+form.login-form-1 {
+    width: 360px;
+    margin-top: -25px;
+}
+form.login-form-1 input{
+    margin: 3% 0 3% 0;
+}
+div.forms-block {
+    margin-left: 27%;
+    display: inline-grid;
+    font-family: "Open Sans", sans-serif;
+}
+
+form.log-with {
+    height: 60px;
+    display: inline-flex;
+    margin-bottom: -5px;
+}
+
+form.log-with button {
+    margin: 7px;
+    cursor: pointer;
+    height: 35px;
+}
+
+form.log-with button.fb-but-1 {
+    background-image: linear-gradient(to right, #0d76be, #0d63ab);
+    border-radius: 5px;
+    vertical-align: center;
+    border: 0;
+
+    color: white;
+    padding-bottom: 10px;
+}
+
+form.log-with button.fb-but-1 img {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 34px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.fb-but-1:before {
+    content: url("img/fb-icon1.png");
+
+    border-right: gray 1px solid;
+    margin-right: 11px;
+    padding-right: 11px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+}
+.fb-but-1:before img{
+    margin-top: 2px;
+}
+
+
+form.log-with button.tw-but-1 {
+    background: linear-gradient(#57d5ff, #17ade0);
+    border-radius: 5px;
+    vertical-align: center;
+    border: 0;
+    /*height: 28px;*/
+    color: white;
+    padding-bottom: 10px;
+
+}
+
+form.log-with button.tw-but-1 img {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 34px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.tw-but-1:before {
+    content: url("img/twitter-icon1.png");
+    border-right: gray 1px solid;
+    margin-right: 11px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    /*vertical-align: middle;*/
+}
+
+div.forms-block div.vertical-lines-block{
+    height: 45px; display: inline-flex;
+    padding-left: 38%;
+    margin-bottom: 35px;
+}
+div.forms-block div.vertical-lines-block span:first-child {
+    width: 30px;
+    border-top: 1px solid #ebebeb;
+    margin-top: 16px
+}
+div.forms-block div.vertical-lines-block span:last-child {
+    width: 30px;
+    border-top: 1px solid #ebebeb;
+    margin-top: 16px
+}
+
+div.forms-block div.vertical-lines-block span:nth-child(2) {
+    position: static;
+    color: gray;
+    text-align: center;
+    background: #ebebeb;
+    padding: 7px 10px 12px 8px;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+}
+form.login-form-1 input[type=text] {
+    background: url("img/user-icon1.png") #ebebeb no-repeat right;
+    vertical-align: middle; /* Выравнивание по середине */
+padding: 10px 10% 9px 10px;
+    color: gray;
+    background-position-x: 98%;
+font-size: large;
+    border-radius: 10px;
+    /*padding-right: 9%;*/
+}
+
+form.login-form-1 input[type=password] {
+    background: url("img/password-icon1.png") #ebebeb no-repeat right;
+    background-position-x: 98%;
+    vertical-align: middle; /* Выравнивание по середине */
+    padding: 10px 10% 9px 10px;
+    font-size: large;
+    color: gray;
+    border-radius: 10px;
+
+}
+form.login-form-1 input[type=text]:hover {
+    background: url("img/user-icon-active.png") #ebebeb no-repeat right;
+    background-position-x: 98%;
+    vertical-align: middle; /* Выравнивание по середине */
+    color: #007eff;
+    border-radius: 10px;
+    font-size: large;
+}
+
+form.login-form-1 input[type=password]:hover{
+    background: url("img/password-icon-active.png") #ebebeb no-repeat right;
+    vertical-align: middle; /* Выравнивание по середине */
+    background-position-x: 98%;
+    font-size: large;
+    /*padding-left: 35px;*/
+    border-radius: 10px;
+}
+form.login-form-1 input[type=password]::placeholder{
+    border-right:  lightgray 1px solid;
+    padding-top: 9px;
+    padding-bottom: 10px
+}
+form.login-form-1 input[type=text]::placeholder{
+    border-right:  lightgray 1px solid;
+    padding-top: 9px;
+    padding-bottom: 10px
+}
+form.login-form-1 input[type=password]:hover::placeholder{
+    color: #007eff;
+
+}
+form.login-form-1 input[type=text]:hover::placeholder{
+    color: #007eff;
+}
+form.login-form-1 input[type=submit]{
+    background: #254e77;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid steelblue;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 7px;
+}
+form.login-form-1 span{
+    display: inline-flex;
+    color: #797979;
+    font-size: small;
+    text-align: center;
+    padding-left: 25%;
+}
+form.login-form-1 span a{
+    color: #007eff;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+div.pswd-block, a{
+    display: block;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+div.pswd-block a{
+    margin-top: 9px;
+}

@@ -1,0 +1,32 @@
+body{
+    background: url("img/bg.jpg") no-repeat;
+}
+span#town{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+div#title{
+    width: 100%;
+    text-align: center;
+font-weight: bolder;
+    font-size: 36px;
+    font-family: Roboto;
+    margin-top: 2%;
+}
+
+div#title-content{
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+
+}
+ol>li span{
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: normal;
+}
+ul>li{
+    text-transform: none;
+    font-size: medium;
+}

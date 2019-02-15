@@ -1,0 +1,17 @@
+1)  SELECT * FROM `books`
+2)  SELECT * FROM `books` WHERE `id` IN(5,10,13)
+3)  SELECT * FROM `books` WHERE `number-of-pages` > 150
+4)  SELECT * FROM `books` WHERE `age` > 30
+5) SELECT * FROM `books` WHERE `author-awards` IS NULL
+6)  SELECT * FROM `books` WHERE `email` = 'mazurkevich@info.com'
+7)  SELECT * FROM `books` WHERE `isbn` = '978-5-699-69310-8'
+8)  SELECT * FROM `books` WHERE `category` = 'PHP'
+9)  SELECT * FROM `books` WHERE `number-of-pages` > 200 AND `age` > 25
+10) SELECT * FROM `books` WHERE `category` = 'PHP' OR `category` = 'C++'
+11) SELECT * FROM `books` ORDER BY `book-name`
+12) SELECT * FROM `books` ORDER BY `email`
+13) SELECT * FROM `books` ORDER BY `number-of-pages` DESC
+14) SELECT DISTINCT `category` FROM `books`
+15) SELECT DISTINCT `book-name` FROM `books`
+16) SELECT * FROM `books` WHERE `date-of-publication` > '2000-01-01'
+17) SELECT * FROM `books` WHERE `date-of-publication` < '2010-01-01'

@@ -1,0 +1,47 @@
+body{
+    width: auto;
+    background: url("img/bg.jpg");
+}
+
+div.title{
+    width:100%;
+    text-align: left;
+    padding-left: 25px;
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-style: italic;
+    font-size: 42px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+table.tab1{
+    width: 48%;
+    float: right;
+    background: mistyrose;
+    border: black 7px double;
+    padding-left: 10px;
+    padding-right: 11px;
+}
+
+table.tab1>tbody>tr:first-child>td,tr:nth-child(3)>td{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 15px;
+}
+table.tab1>tbody>tr:nth-child(2)>td{
+    color: red;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+table.tab1>tbody>tr:last-child>td{
+    color: black;
+    font-style: italic;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    line-height: 18px;
+}
