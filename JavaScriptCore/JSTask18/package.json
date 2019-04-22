@@ -1,0 +1,26 @@
+{
+  "name": "jstask18",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --hot --inline",
+    "start-node": "node app.js"
+  },
+  "dependencies": {
+    "ajax-request": "^1.2.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.2",
+    "json-parser": "^1.1.5",
+    "morgan": "~1.9.0"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

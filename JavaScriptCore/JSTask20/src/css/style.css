@@ -1,0 +1,8 @@
+div.block-day{
+	height: auto!important;
+}
+div#draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; background: bisque }
+div#droppable { width: 350px; height: 350px; padding: 0.5em; float: left; margin: 10px; background: lightgray}
+div.ui-state-highlight{
+	background: lightgreen!important;
+}

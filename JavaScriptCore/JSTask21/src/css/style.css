@@ -1,0 +1,31 @@
+.form{
+	margin-top: 10%;
+}
+.form button{
+	margin-top: 15px;
+}
+.has-error {
+	color: red;
+	border: medium solid red;
+	padding: 4px;
+	/*margin: auto;*/
+	width: 300px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.invalidElem {
+	border: medium solid red;
+}
+
+#errorSummary {
+	border: thick solid red;
+	color: red;
+	width: 350px;
+	margin: auto;
+	padding: 4px;
+	margin-bottom: 5px;
+}
+.error{
+	color: red;
+}

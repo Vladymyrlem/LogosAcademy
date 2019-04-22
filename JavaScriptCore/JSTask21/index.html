@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery-Ui-part2</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/jquery-ui.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/jquery-3.0.0.min.js"></script>
+<!--    <script src="src/js/jquery-ui.js"></script>-->
+    <script src="src/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="src/js/jquery.validate.min.js"></script>
+<!--    <script type="text/javascript" src="src/js/jquery.validate.js "></script>-->
+        </head>
+<body class="ui-widget-content">
+<div class="container dialog">
+<form action="" class="form" id="my_form" method="get">
+    <div class="form-group has-feedback nameBlock">
+        <label for="name">Name</label>
+        <input id="name" type="text" minlength="5" required placeholder="Enter your Name" data-rule-required="true">
+    </div>
+    <div class="form-group has-feedback ageBlock">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" minlength="1" required data-rule-required="true">
+    </div>
+    <div class="form-group has-feedback birthdayBlock">
+        <label for="birthday"></label>
+        <input id="birthday" type="date" dataformatas="dd-mm-yyyy" data-validation="[OPTIONAL, NAME, L>=2, TRIM]" data-toggle="popover" data-content="Name is optional">
+    </div>
+    <button type="submit" class="btn btn-primary" id="btnSubmit">Send</button>
+</form>
+</div>
+<script type="text/javascript" src="src/js/script.js"></script>
+
+</body>
+</html>
