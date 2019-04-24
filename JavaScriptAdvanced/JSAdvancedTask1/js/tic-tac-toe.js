@@ -39,8 +39,8 @@ const Game =  (function () {
         plr === "X" ? (plr = "O") : (plr = "X");
     },
         currentStep:  function () {
-            debugger;
-            var num =+ $('.game-event').e("data-ceil");
+            this.$elem = $('.tic-tac-toe-block');
+            var num =+ this.$elem.find("data-ceil");
             if (!this.textContent) {
                 this.innerText = plr;
                 plr === "X"
