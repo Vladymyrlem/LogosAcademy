@@ -15,7 +15,43 @@ const Game =  (function () {
     ];
     dataX = [],
     dataZero = [];
+    for (let i = 0; i < game_event.length; i++) {
+        game_event[i].addEventListener('click', currentStep);
+    }
+    function currentStep () {
+        let elem = $('.tic-tac-toe-block');
+        var num =+ elem.find("data-ceil");
+        if (!this.textContent) {
+            this.innerText = plr;
+            if(plr === "X"){
+                dataX.push(num)
+            }
+            else{ dataZero.push(num)
+            }
 
+            if (
+                (dataZero.length > 2 || dataX.length > 2) &&
+                (checkWin(dataZero, num) || checkWin(dataX, num))
+            ) {
+                for (var i = 0; i < game_event.length; i++) {
+                    game_event[i].removeEventListener("click", currentStep);
+                }
+                return (msg.innerText = "Победил игрок " + plr);
+            }
+            changePlayer();
+            stepCnt++;
+            stepCnt === 9
+                ? (msg.innerText = "Ничья")
+                : (msg.innerText = "Ходит игрок " + plr);
+        }
+    }
+     function changePlayer() {
+        if(plr === "X"){
+            plr = "O"
+        }else {
+            plr = "X"
+        }
+    }
     return {
 
         checkWin: function (arr, number) {
@@ -35,33 +71,7 @@ const Game =  (function () {
                 }
             }
         },
-        changePlayer: function () {
-        plr === "X" ? (plr = "O") : (plr = "X");
-    },
-        currentStep:  function () {
-            this.$elem = $('.tic-tac-toe-block');
-            var num =+ this.$elem.find("data-ceil");
-            if (!this.textContent) {
-                this.innerText = plr;
-                plr === "X"
-                    ? dataX.push(num) && this.classList.add("x")
-                    : dataZero.push(num) && this.classList.add("o");
-                if (
-                    (dataZero.length > 2 || dataX.length > 2) &&
-                    (this.checkWin(dataZero, num) || checkWin(dataX, num))
-                ) {
-                    for (var i = 0; i < game_event.length; i++) {
-                        game_event[i].removeEventListener("click", this.currentStep);
-                    }
-                    return (msg.innerText = "Победил игрок " + plr);
-                }
-                this.changePlayer();
-                stepCnt++;
-                stepCnt === 9
-                    ? (msg.innerText = "Ничья")
-                    : (msg.innerText = "Ходит игрок " + plr);
-            }
-        },
+
         reset: function () {
             $('#reset').on("click", function() {
                 for (var i = 0; i < game_event.length; i++) {
@@ -69,25 +79,24 @@ const Game =  (function () {
                 }
                 dataZero = [];
                 dataX = [];
-                plr = "O";
+                plr = "0";
                 stepCnt = 0;
                 msg.innerText = "Ходит игрок " + plr;
                 for (var i = 0; i < game_event.length; i++) {
-                    game_event[i].on('click', this.currentStep);
-                    $(this).classList.remove("x", "o");
+                    game_event[i].addEventListener('click', currentStep);
+                    game_event[i].classList.remove("x", "o");
                 }
             });
         },
-        init: function () {
-            this.changePlayer();
-            let current = this.currentStep();
-            this.checkWin();
-            this.reset();
-            for (var i = 0; i < game_event.length; i++) {
-                game_event[i].on("click", current);
-            }
-        }
+
+        // init: function () {
+        //     changePlayer();
+        //     checkWin();
+        //     this.reset();
+        //
+        // }
     };
+
 })();
 
-Game.init();
+Game.checkWin();
