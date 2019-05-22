@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="src/js/task1.js"></script>
+    <script src="src/js/task2.js"></script>
+</head>
+<body>
+<div><h1><b>Task1</b></h1></div><br>
+<input type="submit" onclick="getResult()" value="Вивести результат">
+<hr>
+<div><h1><b>Task2</b></h1></div><br>
+<h3>Простой калькулятор</h3>
+<form name="calc_form">
+    <table border cellpadding = 5 width=350 bgcolor="silver">
+
+        <tr>
+            <td><label for="first-arg">Перший агрумент:</label></td>
+            <td>
+                    <input name="num_01" id="first-arg" type="text" size="24" maxlength=16 value="1">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="sec-arg">Другий агрумент:</label></td>
+            <td>
+                    <input name="num_02" id="sec-arg" type="text" size="24" maxlength=16 value="1">
+
+            </td>
+        </tr>
+        <tr>
+            <td><label for="res">Результат:</label></td>
+            <td>
+                <input id="res" name="res" type="text" size="24" maxlength=0>
+            </td>
+        </tr>
+
+    </table>
+
+    <table border cellpadding = 10 width=350>
+
+        <tr bgcolor="yellow">
+            <td>
+                <input name="btnadd" type="button" value="  +  " onclick="calculate(1)">
+
+            </td>
+            <td>
+                <input name="btnsub" type="button" value="  -  " onclick="calculate(2)">
+
+            </td>
+            <td>
+                <input name="btnmul" type="button" value="  *  " onclick="calculate(3)">
+
+            </td>
+            <td>
+                <input name="btndiv" type="button" value="  /  " onclick="calculate(4)">
+
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>

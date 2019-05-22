@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--   Last edited by https://www.encodedna.com   -->
+<catalog>
+    <month>
+        <month-name>January</month-name>
+    </month>
+    <month>
+        <month-name>February</month-name>
+    </month>
+    <month>
+        <month-name>March</month-name>
+    </month>
+    <month>
+        <month-name>April</month-name>
+    </month>
+    <month>
+        <month-name>May</month-name>
+    </month>
+    <month>
+        <month-name>June</month-name>
+    </month>
+    <month>
+        <month-name>July</month-name>
+    </month>
+    <month>
+        <month-name>August</month-name>
+    </month>
+    <month>
+        <month-name>September</month-name>
+    </month>
+    <month>
+        <month-name>October</month-name>
+    </month>
+    <month>
+        <month-name>November</month-name>
+    </month>
+    <month>
+        <month-name>December</month-name>
+    </month>
+</catalog>

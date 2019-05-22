@@ -1,0 +1,33 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+    <script src="promises.js"></script>
+</head>
+<body>
+<div class="container" style="display: block;">
+    <h1><b>Promises</b></h1>
+
+    <form action="" name="my_form" id="get-ajax-form" class="myForm" method="get" enctype="multipart/form-data">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label for="first-name" class="input-group-text" id="fname">Ім'я:</label>
+        </div>
+        <input id="first-name" class="fName" type="text" value="" placeholder="Іван" name="firstName" required/>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label for="last-name" class="input-group-text" id="lName">Прізвище:</label>
+        </div>
+        <input id="last-name" class="lname" type="text" placeholder="Іванов" name="lastName" required/>
+    </div>
+        <input type="button" name="send" id="send-get" class="btn btn-primary send" onclick="sendGet()" value="Submit Get">
+        <input type="button" name="send-post" id="send-post" class="btn btn-primary send" onclick="sendPost()" value="Submit Post"></form>
+</div>
+</body>
+</html>

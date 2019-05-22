@@ -1,0 +1,24 @@
+{
+  "name": "jstask16",
+  "version": "1.0.0",
+  "devDependencies": {
+    "express": "4.16.4",
+    "npm": "6.8.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --hot --inline",
+    "start-node": "node server.js"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "fs": "0.0.1-security",
+    "fs-js": "^1.0.6",
+    "http": "0.0.0",
+    "json-parser": "^1.1.5"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

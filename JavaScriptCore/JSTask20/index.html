@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery-Ui-part1</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/jquery-ui.css">
+    <link rel="stylesheet" href="src/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/jquery-3.0.0.min.js"></script>
+    <script src="src/js/jquery-ui.js"></script>
+</head>
+<body class="ui-widget-content">
+<nav class="nav ">
+    <ul class="nav navbar">
+        <li class="nav-item"><a href="/" class="nav-link">Accordion</a></li>
+        <li class="nav-item"><a href="dragable-droppable.html" class="nav-link">Dragable-Dropable</a></li>
+    </ul>
+</nav>
+<h1>Accordion</h1>
+<div id="accordion" class="container content">
+        <h3>Понеділок</h3>
+    <div class="block-day">
+
+    <ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+        </ul>
+    </div>
+       <h3>
+            Вівторок
+        </h3>
+    <div class="block-day">
+
+    <ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+            <li class="list-group-item">List item four</li>
+        </ul>
+</div>
+        <h3>
+            Середа
+        </h3>    <div class="block-day">
+
+<ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+            <li class="list-group-item">List item four</li>
+            <li class="list-group-item">List item five</li>
+        </ul>
+    </div>
+        <h3>
+            Четверг
+        </h3>    <div class="block-day">
+
+<ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+            <li class="list-group-item">List item four</li>
+            <li class="list-group-item">List item five</li>
+            <li class="list-group-item">List item six</li>
+        </ul>
+    </div>
+        <h3>
+            П'ятниця
+        </h3>    <div class="block-day">
+
+<ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+            <li class="list-group-item">List item four</li>
+        </ul>
+    </div>
+        <h3>
+            Субота
+        </h3>    <div class="block-day">
+
+<ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+        </ul>
+    </div>
+        <h3>
+            Неділя
+        </h3>    <div class="block-day">
+
+<ul class="list-group">
+            <li class="list-group-item">List item one</li>
+            <li class="list-group-item">List item two</li>
+            <li class="list-group-item">List item three</li>
+            <li class="list-group-item">List item four</li>
+            <li class="list-group-item">List item five</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+$(function () {
+    $("#accordion").accordion(
+        {
+            collapsible: true,
+            autoHeight: true
+        }
+    );
+});
+</script>
+</body>
+</html>

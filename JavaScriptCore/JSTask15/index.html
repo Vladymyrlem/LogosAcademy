@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!--<form name="my_form">-->
+        <!--<label>Last Name</label><input type=text name="lName"><br>-->
+        <!--<label>First Name</label><input type=text name="fName"><br>-->
+        <!--<label>Age</label><input type=text name="age"><br>-->
+        <!--<label>Address</label><input type=text name="address"><br>-->
+        <!--<input type="button" value="sendGet" onclick="sendGet()">-->
+        <!--<input type="button" value="sendPost" onclick="sendPost()">        -->
+    <!--</form>-->
+
+    <div class="container" style="display:flex;">
+        <!--get block-->
+        <div class="get-block" style="margin: 5%">
+            <h1><b>Get Ajax</b></h1>
+            <form action="" name="my_form" id="get-ajax-form" class="myForm" method="get" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="first-name">Прізвище:</label>
+                    <input id="first-name" class="fName" type="text" value="" placeholder="Іван" name="fName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Ім'я:</label>
+                    <input id="last-name" class="lname" type="text" placeholder="Іванов" name="lName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="age">Вік:</label>
+                    <input id="age" type="number"  class="age" value="" placeholder="1-100 років" name="age" required/>
+                </div>
+                <div>
+                    <label for="adr">Місце проживання</label>
+                    <input id="adr" name="address" class="from" value="" type="text" required/>
+                </div>
+                <input type="button" name="send" id="send-get" class="btn btn-primary send" onclick="sendGet()" value="Submit Get">
+                <input type="button" name="send-post" id="send-post" class="btn btn-primary send" onclick="sendPost()" value="Submit Post">
+
+            </form>
+        </div>
+
+    </div>
+    <script src="src/js/script_get_ajax.js"></script>
+    <script src="src/js/script_post_ajax.js"></script>
+
+</body>
+
+</html>

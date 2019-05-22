@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <script src="src/js/jQuery.js"></script>
+    <script src="src/js/jquery-3.0.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        div.input-group-prepend{
+            width: 75px;
+        }
+        input{
+            margin: 25px 0;
+        }
+        div.input-group-text{
+           margin: 25px 0;
+        }
+        .panel-body{
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<form name="userForm" id="userForm">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text" ><span>Ім'я</span></div>
+        </div>
+        <input class="form-control" name="f_name" id="f_name" aria-label="f_name"/>
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text" ><span>Прізвище</span></div>
+        </div>
+        <input class="form-control" id="l_name" aria-label="l_name" name="l_name" />
+
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text" ><span>Вік</span></div>
+        </div>
+        <input type="number" class="form-control" aria-label="adr" id="age" name="age" />
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text" ><span>Адреса</span></div>
+            </div>
+            <input class="form-control" id="adr" aria-label="adr" name="adr"/>
+    </div>
+
+
+</form>
+<div class="panel-body">
+    <button type="submit" id="get" class="btn btn-sm btn-primary" onclick="GetUsers()">GetAjaxRequest</button>
+    <button  type="submit" id="post" class="btn btn-sm btn-primary" onclick="PostUser()">PostAjaxRequest</button>
+</div>
+<h2>Список пользователей</h2>
+
+<table class="table table-condensed table-striped table-bordered">
+    <thead><tr><th>Ім'я</th><th>Прізвище</th><th>Вік</th><th>Адреса</th></tr></thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+<script src="src/js/get_request.js"></script>
+<script src="src/js/post_request.js"></script>
+</body>
+</html>

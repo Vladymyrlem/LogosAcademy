@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery-Ui-part1</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/jquery-ui.css">
+    <link rel="stylesheet" href="src/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/jquery-3.0.0.min.js"></script>
+    <script src="src/js/jquery-ui.js"></script>
+</head>
+<body>
+<nav class="nav">
+    <ul class="nav navbar">
+        <li class="nav-item"><a class="nav-link" href="/">Accordion</a></li>
+        <li class="nav-item"><a class="nav-link" href="dragable-droppable.html">Dragable-Dropable</a></li>
+    </ul>
+</nav>
+<p>Item Count:<span id="count"></span></p>
+
+<!--<div class="dropping-area">-->
+    <div id="draggable" class="ui-widget-content ui-draggable">
+        <p>Drag me to my target</p>
+    </div>
+
+    <div id="droppable" class="ui-widget-header">
+        <p>Drop here</p>
+    </div>
+<!--</div>-->
+<script type="text/javascript">
+    $( function(){
+    let count= 0;
+    $( "div#draggable" ).draggable();
+        $( "div#droppable" ).droppable({
+            drop: function( event, ui ) {
+                count+=1;
+                $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "p" )
+                    .html( "Dropped!" );
+                $("#count").text(count);
+            },
+            out:function(event, ui){
+                count -=1;
+                $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "p" )
+                    .html( "Out!" );
+                $("#count").text(count);
+            }
+        });
+    } );
+</script>
+</body>
+</html>
