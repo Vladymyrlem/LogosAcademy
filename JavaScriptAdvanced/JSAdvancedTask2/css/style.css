@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background: url("../img/foot-bkg.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+div#football-fitch{
+background: url("../img/football-gate.jpg") no-repeat;
+    background-size: contain;
+    height: 525px;
+    width: 52%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    padding-left: 25px;
+}
+span.goals-block{
+
+    background: lightcoral;
+    padding: 40px;
+    position: absolute;
+    border-radius: 100px;
+}
+
+div.section:first-child,div.ball-block{
+    margin-bottom: 11%;
+    padding-top: 5px;
+}
+div.section:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+div.goalkeeper{
+    background: url("../img/goalkeeper.png") center no-repeat;
+    width: 320px;
+    height: 192px;
+    position: relative;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+div#first-block span.goals-block, div#third-block span.goals-block{
+    float: left;
+}
+div.ball-block{
+    background: url("../img/ball.png") no-repeat;
+    width: 75px;
+    height: 75px;
+margin: 43px auto;
+}

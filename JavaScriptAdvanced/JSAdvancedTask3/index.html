@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+<body>
+<div class="calculator">
+
+<div class="display-block">
+    <div class="title">
+        <h1>Javascript calculator</h1>
+    </div>
+    <div id="result-block">
+                <input aria-label="Expression" class="expr col-md-12" id="expr" autofocus="true" type="text" placeholder="Enter your expression" onload="this.focus()">
+                <input aria-label="Result" class="expr col-md-12" id="answer" type="text" placeholder="Result" value="0">
+    </div>
+    </div>
+
+<div id="stand-functions">
+    <div class="row" id="block1">
+        <input type="button" aria-label="one" id="one" class="num" data-val="1" value="1">
+
+        <input  type="button" aria-label="two" id="two" class="num" data-val="2" value="2">
+        <input type="button" aria-label="three" id="three" class="num" data-val="3" value="3">
+        <input type="button" aria-label="delete" id="clear" class="del action"  value="AC">
+        <input type="button" aria-label="clear" id="delete" class="clear action" value="Del">
+
+    </div>
+<div class="row" id="block2">
+    <input type="button" aria-label="four" id="four" class="num" data-val="4" value="4">
+
+    <input type="button" aria-label="five" id="five" class="num" data-val="5" value="5">
+
+    <input type="button" aria-label="six" id="six" class="num" data-val="6" value="6">
+    <input type="button" aria-label="plus" id="plus" class="action" data-val="+" value="&plus;">
+
+    <input type="button" id="minus" aria-label="minus" class="action" data-val="-" value="&minus;">
+
+</div>
+
+<div class="row" id="block3">
+    <input class="num" id="seven" type="button" aria-label=""  data-val="7" value="7">
+
+    <input class="num" id="eight" type="button" aria-label=""  data-val="8" value="8">
+
+    <input class="num" id="nine" type="button" aria-label=""  data-val="9" value="9">
+
+    <input type="button" id="times" class="action" aria-label="multi" data-val="&times;" value="&times;">
+
+    <input type="button" id="divide" class="action" aria-label="division" data-val="&divide;" value="&divide;">
+</div>
+
+<div class="row" id="block4">
+    <input class="action" id="point" type="button" aria-label="" data-val="." value=".">
+
+    <input class="num" id="zero" type="button" aria-label="" data-val="0" value="0">
+
+    <input class="num" id="two-zero" type="button" aria-label="" data-val="00" value="00">
+
+    <input id="exponent" class="action degree" type="button" aria-label="" data-val="^" value="X^">
+
+    <input class="action" id="equals" aria-label="" type="button" value="=">
+
+
+
+</div>
+</div>
+    <div class="row spec-functions" id="block5">
+        <input class="spec-btn" aria-label="" type="button" data-val="cos(" id="cos" value="cos">
+
+        <input class="spec-btn" aria-label="" value="sin" id="sin" data-val="sin(" type="button">
+
+        <input  class="spec-btn" aria-label="" type="button" id="tan" data-val="tan(" value="tan">
+
+        <input class="spec-btn" id="sqrt" type="button" aria-label="" data-val="sqrt(" value="&radic;">
+
+        <input class="spec-btn" type="button" id="open-parenthesis" data-val="(" aria-label="" value="(">
+
+        <input class="spec-btn" type="button" id="close-parenthesis" data-val=")" aria-label="" value=")">
+
+    </div>
+</div>
+<script src="js/jQuery.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>

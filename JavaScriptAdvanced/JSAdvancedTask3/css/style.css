@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/fonts/Roboto-Regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('/fonts/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/Roboto-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('/fonts/Roboto-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Roboto-Regular.svg#leaguegothic-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/fonts/Roboto-Bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('/fonts/Roboto-Bold.woff2') format('woff2'), /* Super Modern Browsers */ url('/fonts/Roboto-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('/fonts/Roboto-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('/fonts/Roboto-Bold.svg#leaguegothic-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/fonts/Roboto-Light.eot'); /* IE 9 Compatibility Mode */
+    src: url('/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('/fonts/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/Roboto-Light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('/fonts/Roboto-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Roboto-Light.svg#leaguegothic-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body{
+    vertical-align: middle!important;
+    background: #100a1c!important;
+    background-image:
+            radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+            radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%)!important;
+    background-attachment: fixed!important;
+    color: #6cacc5!important;
+}
+.calculator{
+    width: 580px;
+    height: 750px;
+    padding: 16px 20px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    flex-flow: column wrap;
+}
+.display-block{
+    font-weight: 500;
+
+    font-family: Roboto-Light,sans-serif;
+    color: #ececec;
+
+    height: 300px;
+    padding: 0;
+    border-radius: 0px 0px 15px 15px;
+    width: 533px;
+    vertical-align: middle;
+    margin: 60px 0 0 0;
+}
+#header{
+    width: 533px;
+    height: 50px;
+    margin: 0px 13.5px 0px 13.5px;
+    padding: 5px 0px 15px 0px;
+    /*padding: 5px 5px 5px 5px;*/
+}
+.title h1{
+    margin-bottom: 15px;
+    padding-top: 20px;
+    font-family: Roboto-Regular, sans-serif
+}
+
+div#result-block{
+    display: flex;
+    flex-flow: column;
+}
+#result-block input#expr{
+    font-size: 25px;
+    font-family: Roboto-Regular, sans-serif;
+    margin: 0;
+    height: 110px;
+    width: inherit;
+    background-color: transparent;
+    border: none;
+    text-transform: lowercase;
+color: lightcoral;
+}
+#result-block input#answer{
+    text-align: right;
+    margin: 0;
+    font-size: 35px;
+    font-family: Roboto-Regular, sans-serif;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    width: inherit;
+    text-transform: lowercase;
+color: #1e7e34;
+}
+
+.spec-functions{
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    margin: 8px 0 0 0;
+    justify-content: space-between;
+
+}
+.spec-btn{
+    font-family: Roboto-Light, sans-serif;
+    border: 0;
+    background: rgba(42,50,113, .28);
+    color: #6cacc5;
+    cursor: pointer;
+    float: left;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+    flex: 1 1  15%;
+}
+
+.spec-btn:last-of-type{
+    margin: 5px 0 ;
+
+}
+
+#stand-functions{
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    display: table;
+}
+#stand-functions input, .spec-functions input{
+    float:left;
+    font-size: 20px;
+    font-family: Roboto-Light, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0;
+    font-weight: bolder;
+    border: 0;
+    background: rgba(42, 50, 113, 0.28);
+    color: #6cacc5;
+    cursor: pointer;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+}
+#block1 input.num{
+    flex: 0 0 15%;
+
+}
+#stand-functions  #block1 input.num,#block2 input.num, #block3 input.num{
+    flex: 0 0 15%;
+}
+#block1,#block2,#block3,#block4{
+    display: flex;
+    justify-content: space-between;
+}
+#stand-functions #block1 input.action,#block2 input.action, #block3 input.action{
+    flex: 1 2 20%;
+}
+#stand-functions  #block4 input.num, input.action:first-child{
+    flex: 0 0 15%;
+}
+#stand-functions  #block4 input.degree,#block4 input.action:last-child{
+    flex: 1 2 20%;
+}
+
+
+#stand-functions #block1 input.action{
+    background-color: #8c2344;
+}
+
+#block1 input:last-of-type, #block2 input:last-of-type,#block3 input:last-of-type,#block4 input:last-of-type{
+    margin: 5px 0px 0px 0px;
+}
