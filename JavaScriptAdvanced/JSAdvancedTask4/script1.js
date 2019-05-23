@@ -1,4 +1,4 @@
-
+'use strict';
 var data = {
     "Task1": {
         "index.html": {}
@@ -23,10 +23,10 @@ var data = {
                 "js":{},
                 "css":
                     {
-                        "style.css":{}}
-
+                        "style.css":{}
+                    }
             },
-        "lng":{}
+        "lang":{}
     }
 };
 function createTree(container, obj) {
@@ -39,7 +39,7 @@ function createTreeDom(obj) {
     if (isObjectEmpty(obj)) return;
 
     var ul = document.createElement('ul');
-ul.classList.add('treeline');
+    ul.classList.add('treeline');
     for (let key in obj) {
         let li = document.createElement('li');
         li.innerHTML = key;
@@ -48,9 +48,6 @@ ul.classList.add('treeline');
         let childrenUl = createTreeDom(obj[key]);
         if (childrenUl) li.appendChild(childrenUl);
         ul.appendChild(li);
-
-
-
     }
 
     return ul;
@@ -64,9 +61,6 @@ function isObjectEmpty(obj) {
     return true;
 }
 
-
-
-
 var container = document.getElementById('tree');
 createTree(container, data);
 var tree = document.getElementsByTagName('ul')[0];
@@ -79,7 +73,7 @@ for (var i = 0; i < treeLis.length; i++) {
     li.id = i;
     var span = document.createElement('span');
     li.insertBefore(span, li.firstChild);
-    span.insertAdjacentHTML('beforeBegin','<input type="button" class="add" value="+">');
+    span.insertAdjacentHTML('beforeBegin','<input type="button" class="add" name="add" id="btn'+ i + '" value="+">');
     span.appendChild(span.nextSibling);
 }
 
@@ -89,19 +83,13 @@ tree.onclick = function(event) {
     if (target.tagName != 'SPAN') {
         return;
     }
-let getid = this.id;
-    console.log(getid);
     /* now we know the SPAN is clicked */
     var childrenContainer = target.parentNode.getElementsByTagName('ul')[0];
     if (!childrenContainer) return; // no children
 
     childrenContainer.hidden = !childrenContainer.hidden;
 };
-function  someFunc(){
-    let val =  document.getElementById('name')
-    return val;
-}
-document.addEventListener("click", function (e) {
-console.log(someFunc())
-});
+
+
+
 
