@@ -159,6 +159,10 @@ div#tree ul > li > ul:first-child {
 
 .treeline span {
     cursor: pointer;
+
+}
+.treeline span:hover{
+    font-weight: bold;
 }
 
 ul.treeline > li > ul > li:last-child input, ul.treeline > li > ul > li > ul > li:last-child input {
