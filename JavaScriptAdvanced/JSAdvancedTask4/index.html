@@ -6,50 +6,19 @@
 
     <link rel="stylesheet" href="style.css">
     <style type="text/css">
-        .treeline,
-        .treeline ul,
-        .treeline li {
-            margin: 0;
-            padding: 0;
-            line-height: 1;
-            list-style: none;
-        }
-        .treeline ul {
-            margin: 0 0 0 .5em; /* вести линию вниз где-то с полбуквы родителя */
-        }
-        .treeline > li:not(:only-child),
-        .treeline li li {
-            position: relative;
-            padding: .2em 0 0 1.2em; /* отступ до текста; для раскрывающегося списка в ряде случаев (в Хроме есть баг) padding-top (.2em) лучше указывать в px */
-        }
-        .treeline li:not(:last-child) {
-            border-left: 1px solid #ccc; /* толщина, цвет и стиль (вместо сплошной пунктирная или точечная) вертикальной линии */
-        }
-        .treeline li li:before,
-        .treeline > li:not(:only-child):before { /* горизонтальная линия */
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1.1em; /* не более отступа до текста (1.2em) */
-            height: .7em; /* начинается приблизительно с половины высоты буквы (.5em + .2em) */
-            border-bottom: 1px solid #ccc;
-        }
-        .treeline li:last-child:before { /* вертикальная линия последнего пункта в каждом списке */
-            width: calc(1.1em - 1px); /* для перфекционистов */
-            border-left: 1px solid #ccc;
-        }
+
     </style>
 </head>
 <body>
 <div id="tree" onclick="">
-    <input id="name" type="text" placeholder="Enter name">
+    <input id="name" type="text" placeholder="Enter name" aria-label="Name of new item" >
+    <input type="button" value="add" id="create" onclick="createItem()" >
+    <select aria-label="List of items" id="sel-list">
+        <option>Choose item</option>
+
+    </select>
 </div>
 
-<ul id="dataList"></ul>
-    <div id="listItem">
-            <div class="title"></div>
-        </div>
 
 <!--<script src="script.js"></script>-->
 <!--<script src="script1.js"></script>-->
